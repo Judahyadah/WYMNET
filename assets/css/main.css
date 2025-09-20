@@ -453,6 +453,14 @@ h6 {
 /*--------------------------------------------------------------
 # Global Footer
 --------------------------------------------------------------*/
+
+.img-fld{
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+  corner-shape: squarcle;
+}
+
 .footer {
   color: var(--default-color);
   background-color: var(--background-color);
