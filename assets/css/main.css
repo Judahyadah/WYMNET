@@ -32,6 +32,36 @@
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
+/* Color Variables - More Consistent */
+:root {
+    --primary-brown: #724e2c;
+    --primary-brown-dark: #523823;
+    --primary-brown-light: #9b6c25;
+    --accent-gold: #d4a574;
+    --bg-light: #fff8f0;
+    --bg-cream: #fff2da;
+    --text-dark: #2d2d2d;
+    --text-muted: #666666;
+    
+    /* Consistent Spacing */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 3rem;
+    --spacing-xl: 5rem;
+    
+    /* Consistent Shadows */
+    --shadow-sm: 0 2px 8px rgba(114, 78, 44, 0.08);
+    --shadow-md: 0 4px 20px rgba(114, 78, 44, 0.12);
+    --shadow-lg: 0 10px 40px rgba(114, 78, 44, 0.15);
+    
+    /* Border Radius */
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 16px;
+    --radius-full: 50px;
+}
+
 :root {
   --nav-color: #ffffff;  /* The default color of the main navmenu links */
   --nav-hover-color: #724e2c; /* Applied to main navmenu links when they are hovered over or active */
@@ -758,7 +788,10 @@ section,
   padding: 60px 0;
   scroll-margin-top: 100px;
   overflow: clip;
+    padding: var(--spacing-xl) 0;
 }
+
+
 
 @media (max-width: 1199px) {
 
@@ -1806,14 +1839,16 @@ a.stretched-link{
     margin-bottom: 2.5rem;
 }
 
+/* Timeline Improvements */
 .timeline {
     position: relative;
+    padding-left: var(--spacing-md);
 }
 
 .timeline-item {
     position: relative;
-    margin-bottom: 2.5rem;
-    padding-left: 2.5rem;
+    margin-bottom: var(--spacing-lg);
+    padding-left: var(--spacing-lg);
 }
 
 .timeline-item::before {
@@ -1821,85 +1856,149 @@ a.stretched-link{
     position: absolute;
     left: 0;
     top: 0.5rem;
-    width: 12px;
-    height: 12px;
-    background-color: var(--primary-color);
+    width: 14px;
+    height: 14px;
+    background-color: var(--primary-brown);
     border-radius: 50%;
+    border: 3px solid var(--bg-light);
+    box-shadow: 0 0 0 3px var(--primary-brown-light);
+    transition: all 0.3s ease;
+}
+
+.timeline-item:hover::before {
+    transform: scale(1.2);
+    box-shadow: 0 0 0 6px rgba(114, 78, 44, 0.2);
 }
 
 .timeline-item:not(:last-child)::after {
     content: '';
     position: absolute;
-    left: 5px;
-    top: 1.25rem;
+    left: 6px;
+    top: 1.5rem;
     width: 2px;
-    height: 3.75rem;
-    background-color: var(--border-color);
+    height: calc(100% + var(--spacing-md));
+    background: linear-gradient(to bottom, var(--primary-brown) 0%, var(--accent-gold) 100%);
 }
 
 .timeline-year {
-    color: var(--primary-dark);
-    font-size: 1.5rem;
+    color: var(--primary-brown);
+    font-size: 1.75rem;
     font-weight: 700;
-    margin-bottom: 0.5rem;
+    margin-bottom: var(--spacing-sm);
+    font-family: var(--heading-font);
 }
 
 .timeline-description {
     color: var(--text-muted);
     font-size: 1rem;
-    line-height: 1.6;
+    line-height: 1.7;
 }
 
+/* Story Image */
 .story-image {
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     overflow: hidden;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-    height: 400px;
+    box-shadow: var(--shadow-lg);
+    height: 450px;
+    transition: transform 0.3s ease;
+}
+
+.story-image:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg), 0 20px 60px rgba(114, 78, 44, 0.2);
 }
 
 .story-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: transform 0.5s ease;
 }
 
+.story-image:hover img {
+    transform: scale(1.05);
+}
+
+/* Mission Vision Cards */
 .mission-vision-card {
     background: white;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-    border-left: 4px solid var(--primary-color);
-    transition: transform 0.2s ease-in-out;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+    border-left: 4px solid var(--primary-brown);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    padding: var(--spacing-lg) !important;
 }
 
 .mission-vision-card:hover {
-    transform: translateY(-2px);
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-left-width: 6px;
 }
 
 .card-title-custom {
-    color: var(--primary-dark);
+    color: var(--text-dark);
     font-size: 1.5rem;
     font-weight: 700;
-    margin-bottom: 1rem;
+    margin-bottom: var(--spacing-md);
     position: relative;
+    padding-bottom: var(--spacing-md);
 }
 
 .card-title-custom::after {
     content: '';
     position: absolute;
-    bottom: -0.5rem;
+    bottom: 0;
     left: 0;
-    width: 40px;
+    width: 50px;
     height: 3px;
-    background-color: var(--primary-color);
+    background: linear-gradient(to right, var(--primary-brown) 0%, var(--accent-gold) 100%);
+    border-radius: 2px;
+}
+
+.card-title-custom i {
+    color: var(--primary-brown);
+    margin-right: var(--spacing-sm);
 }
 
 .card-text-custom {
     color: var(--text-muted);
     font-size: 1rem;
-    line-height: 1.7;
+    line-height: 1.8;
 }
 
+#data-scei {
+    background: linear-gradient(to bottom, white 0%, var(--bg-light) 100%);
+    padding: var(--spacing-xl) 0;
+}
+#data-scei .section-subtitle {
+    color: var(--primary-brown);
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: var(--spacing-sm);
+}
+
+#data-scei .section-title {
+    color: var(--text-dark);
+    font-size: clamp(2rem, 4vw, 2.5rem);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: var(--spacing-md);
+}
+
+#data-scei .section-description {
+    color: var(--text-muted);
+    font-size: 1.125rem;
+    line-height: 1.8;
+    margin-bottom: var(--spacing-lg);
+}
+
+
 @media (max-width: 768px) {
+  section, .section {
+        padding: var(--spacing-lg) 0;
+    }
     .section-title {
         font-size: 2.25rem;
     }
