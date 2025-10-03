@@ -1,0 +1,55 @@
+.banner1 {
+    background: linear-gradient(135deg, #724e2c 0%, #523823 100%);
+    padding: 80px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner1::before {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: rgba(155, 108, 37, 0.1);
+    border-radius: 50%;
+    top: -250px;
+    right: -100px;
+    animation: float 6s ease-in-out infinite;
+}
+
+.banner1 .content h2 {
+    color: white;
+    font-size: 3em;
+    margin-bottom: 15px;
+    animation: slideInLeft 0.8s ease-out;
+}
+
+.banner1 .content p {
+    color: rgba(255,255,255,0.9);
+    font-size: 1.2em;
+    margin-bottom: 25px;
+    animation: slideInLeft 0.8s ease-out 0.2s backwards;
+}
+
+.btn1 {
+    background: white;
+    color: #724e2c;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    animation: slideInLeft 0.8s ease-out 0.4s backwards;
+    position: relative;
+    z-index: 1;
+}
+
+.btn1:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}

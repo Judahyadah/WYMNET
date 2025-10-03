@@ -103,6 +103,10 @@ h6 {
   font-weight: 600;
 }
 
+.btn{
+  /* background-color: #; */
+}
+
 .php-email-form .sent-message {
   display: none;
   color: #ffffff;
@@ -1109,7 +1113,7 @@ section,
 # Features Section
 --------------------------------------------------------------*/
 section.features{
-  background-color: #4f2f2feb;
+  /* background-color: #4f2f2feb; */
 }
 .features .features-item {
   background-color: #fff2da;
