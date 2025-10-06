@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Our Courses | WYMNET Data Solutions</title>
+  <meta name="description" content="Explore our comprehensive data analysis and AI training courses">
+  <meta name="keywords" content="data analysis courses, AI training, Python, Power BI, machine learning">
+
+  <!-- Favicons -->
+  <link href="assets/img/logo.png" rel="icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="./assets/css/main.css" rel="stylesheet">
+  <link href="./assets/css/custom.css" rel="stylesheet">
+  <link href="./assets/css/courses.css" rel="stylesheet">
+  <link href="./assets/css/about.css" rel="stylesheet">
+</head>
+
+<body class="courses-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+      <a href="./index.html" class="logo d-flex align-items-center">
+        <img src="./assets/img/logo.png" alt="">
+        <h1 class="sitename">WYMNET</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Artificial Intelligence Training</a></li>
+          <li><a href="./about.html">About Us</a></li>
+          <li class="dropdown"><a href="courses.html" class="active"><span>Courses</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li class="dropdown"><a href="#"><span>Data Analysis</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Python Training</a></li>
+                  <li><a href="#">Power BI Training</a></li>
+                  <li><a href="#">SQL for Data Analysis</a></li>
+                  <li><a href="#">R for Data Analysis</a></li>
+                  <li><a href="#">Tableau</a></li>
+                  <li><a href="#">Microsoft Excel</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="#"><span>UI/UX</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Figma</a></li>
+                  <li><a href="#">Adobe XD</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="#"><span>Project Management</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Project Management Certification</a></li>
+                  <li><a href="#">Microsoft Project</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <!-- Hero Section -->
+    <section class="courses-hero">
+      <div class="container text-center" data-aos="fade-up">
+        <h1>Our Training Courses</h1>
+        <p>Master data analysis, AI, and cutting-edge technologies with industry-expert instructors and hands-on projects</p>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="stat-item">
+              <span class="stat-number">25+</span>
+              <span class="stat-label">Expert Courses</span>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="stat-item">
+              <span class="stat-number">500+</span>
+              <span class="stat-label">Students Trained</span>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="stat-item">
+              <span class="stat-number">95%</span>
+              <span class="stat-label">Success Rate</span>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="stat-item">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Practical Training</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Category Tabs -->
+    <section class="py-5">
+      <div class="container">
+        <div class="category-tabs" data-aos="fade-up">
+          <button class="category-tab active" data-category="all">All Courses</button>
+          <button class="category-tab" data-category="data-analysis">Data Analysis</button>
+          <button class="category-tab" data-category="ai-ml">AI & Machine Learning</button>
+          <button class="category-tab" data-category="ui-ux">UI/UX Design</button>
+          <button class="category-tab" data-category="project-mgmt">Project Management</button>
+        </div>
+
+        <!-- Courses Grid -->
+        <div class="row gy-4" id="coursesGrid">
+          <!-- Python Training -->
+          <div class="col-lg-4 col-md-6 course-item" data-category="data-analysis" data-aos="fade-up" data-aos-delay="100">
+            <div class="course-card">
+              <div class="course-icon">
+                <i class="bi bi-code-slash"></i>
+              </div>
+              <div class="course-body">
+                <span class="course-category">Data Analysis</span>
+                <h3 class="course-title">Python for Data Analysis</h3>
+                <p class="course-description">Master Python programming for data manipulation, analysis, and visualization using Pandas, NumPy, and Matplotlib.</p>
+                <ul class="course-features">
+                  <li><i class="bi bi-check-circle-fill"></i> Hands-on Projects</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Real-world Datasets</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Certificate upon Completion</li>
+                </ul>
+              </div>
+              <div class="course-footer">
+                <span class="course-duration"><i class="bi bi-clock"></i> 8 Weeks</span>
+                <button class="enroll-btn">Enroll Now</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Power BI Training -->
+          <div class="col-lg-4 col-md-6 course-item" data-category="data-analysis" data-aos="fade-up" data-aos-delay="200">
+            <div class="course-card">
+              <div class="course-icon">
+                <i class="bi bi-graph-up"></i>
+              </div>
+              <div class="course-body">
+                <span class="course-category">Data Analysis</span>
+                <h3 class="course-title">Power BI Masterclass</h3>
+                <p class="course-description">Create stunning interactive dashboards and reports. Learn DAX, data modeling, and advanced visualization techniques.</p>
+                <ul class="course-features">
+                  <li><i class="bi bi-check-circle-fill"></i> Dashboard Creation</li>
+                  <li><i class="bi bi-check-circle-fill"></i> DAX Formulas</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Business Intelligence</li>
+                </ul>
+              </div>
+              <div class="course-footer">
+                <span class="course-duration"><i class="bi bi-clock"></i> 6 Weeks</span>
+                <button class="enroll-btn">Enroll Now</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Machine Learning -->
+          <div class="col-lg-4 col-md-6 course-item" data-category="ai-ml" data-aos="fade-up" data-aos-delay="300">
+            <div class="course-card">
+              <div class="course-icon">
+                <i class="bi bi-robot"></i>
+              </div>
+              <div class="course-body">
+                <span class="course-category">Artificial Intelligence</span>
+                <h3 class="course-title">Machine Learning Fundamentals</h3>
+                <p class="course-description">Build predictive models using scikit-learn. Cover supervised, unsupervised learning, and neural network basics.</p>
+                <ul class="course-features">
+                  <li><i class="bi bi-check-circle-fill"></i> Algorithm Training</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Model Deployment</li>
+                  <li><i class="bi bi-check-circle-fill"></i> AI Applications</li>
+                </ul>
+              </div>
+              <div class="course-footer">
+                <span class="course-duration"><i class="bi bi-clock"></i> 10 Weeks</span>
+                <button class="enroll-btn">Enroll Now</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- SQL Training -->
+          <div class="col-lg-4 col-md-6 course-item" data-category="data-analysis" data-aos="fade-up" data-aos-delay="100">
+            <div class="course-card">
+              <div class="course-icon">
+                <i class="bi bi-database"></i>
+              </div>
+              <div class="course-body">
+                <span class="course-category">Data Analysis</span>
+                <h3 class="course-title">SQL for Data Analysis</h3>
+                <p class="course-description">Query, manipulate, and analyze data using SQL. Learn joins, subqueries, window functions, and database design.</p>
+                <ul class="course-features">
+                  <li><i class="bi bi-check-circle-fill"></i> Database Querying</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Data Manipulation</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Performance Optimization</li>
+                </ul>
+              </div>
+              <div class="course-footer">
+                <span class="course-duration"><i class="bi bi-clock"></i> 5 Weeks</span>
+                <button class="enroll-btn">Enroll Now</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tableau -->
+          <div class="col-lg-4 col-md-6 course-item" data-category="data-analysis" data-aos="fade-up" data-aos-delay="200">
+            <div class="course-card">
+              <div class="course-icon">
+                <i class="bi bi-bar-chart"></i>
+              </div>
+              <div class="course-body">
+                <span class="course-category">Data Analysis</span>
+                <h3 class="course-title">Tableau Data Visualization</h3>
+                <p class="course-description">Design impactful visualizations and interactive dashboards. Master calculated fields, parameters, and storytelling.</p>
+                <ul class="course-features">
+                  <li><i class="bi bi-check-circle-fill"></i> Visual Analytics</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Dashboard Design</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Data Storytelling</li>
+                </ul>
+              </div>
+              <div class="course-footer">
+                <span class="course-duration"><i class="bi bi-clock"></i> 6 Weeks</span>
+                <button class="enroll-btn">Enroll Now</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Figma UI/UX -->
+          <div class="col-lg-4 col-md-6 course-item" data-category="ui-ux" data-aos="fade-up" data-aos-delay="300">
+            <div class="course-card">
+              <div class="course-icon">
+                <i class="bi bi-palette"></i>
+              </div>
+              <div class="course-body">
+                <span class="course-category">UI/UX Design</span>
+                <h3 class="course-title">Figma UI/UX Design</h3>
+                <p class="course-description">Create stunning user interfaces and prototypes. Learn design systems, user research, and interactive prototyping.</p>
+                <ul class="course-features">
+                  <li><i class="bi bi-check-circle-fill"></i> Interface Design</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Prototyping</li>
+                  <li><i class="bi bi-check-circle-fill"></i> User Testing</li>
+                </ul>
+              </div>
+              <div class="course-footer">
+                <span class="course-duration"><i class="bi bi-clock"></i> 7 Weeks</span>
+                <button class="enroll-btn">Enroll Now</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Excel Advanced -->
+          <div class="col-lg-4 col-md-6 course-item" data-category="data-analysis" data-aos="fade-up" data-aos-delay="100">
+            <div class="course-card">
+              <div class="course-icon">
+                <i class="bi bi-file-spreadsheet"></i>
+              </div>
+              <div class="course-body">
+                <span class="course-category">Data Analysis</span>
+                <h3 class="course-title">Microsoft Excel for Data Analysis</h3>
+                <p class="course-description">Advanced Excel techniques including PivotTables, Power Query, macros, and complex formulas for data analysis.</p>
+                <ul class="course-features">
+                  <li><i class="bi bi-check-circle-fill"></i> Advanced Formulas</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Power Query</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Automation with VBA</li>
+                </ul>
+              </div>
+              <div class="course-footer">
+                <span class="course-duration"><i class="bi bi-clock"></i> 5 Weeks</span>
+                <button class="enroll-btn">Enroll Now</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- R Programming -->
+          <div class="col-lg-4 col-md-6 course-item" data-category="data-analysis" data-aos="fade-up" data-aos-delay="200">
+            <div class="course-card">
+              <div class="course-icon">
+                <i class="bi bi-file-code"></i>
+              </div>
+              <div class="course-body">
+                <span class="course-category">Data Analysis</span>
+                <h3 class="course-title">R for Data Analysis</h3>
+                <p class="course-description">Statistical computing and graphics with R. Learn tidyverse, ggplot2, and statistical modeling techniques.</p>
+                <ul class="course-features">
+                  <li><i class="bi bi-check-circle-fill"></i> Statistical Analysis</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Data Visualization</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Predictive Modeling</li>
+                </ul>
+              </div>
+              <div class="course-footer">
+                <span class="course-duration"><i class="bi bi-clock"></i> 8 Weeks</span>
+                <button class="enroll-btn">Enroll Now</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Management -->
+          <div class="col-lg-4 col-md-6 course-item" data-category="project-mgmt" data-aos="fade-up" data-aos-delay="300">
+            <div class="course-card">
+              <div class="course-icon">
+                <i class="bi bi-kanban"></i>
+              </div>
+              <div class="course-body">
+                <span class="course-category">Project Management</span>
+                <h3 class="course-title">Project Management Certification</h3>
+                <p class="course-description">Master project planning, execution, and delivery. Prepare for PMP certification with real-world case studies.</p>
+                <ul class="course-features">
+                  <li><i class="bi bi-check-circle-fill"></i> PMBOK Framework</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Agile & Scrum</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Risk Management</li>
+                </ul>
+              </div>
+              <div class="course-footer">
+                <span class="course-duration"><i class="bi bi-clock"></i> 12 Weeks</span>
+                <button class="enroll-btn">Enroll Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="container text-center position-relative">
+        <h2 data-aos="fade-up">Ready to Transform Your Career?</h2>
+        <p data-aos="fade-up" data-aos-delay="100">Join thousands of professionals who have upskilled with WYMNET</p>
+        <button class="cta-btn" data-aos="fade-up" data-aos-delay="200">Start Learning Today</button>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">WYMNET</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>A108 Adam Street</p>
+            <p>New York, NY 535022</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
+            <p><strong>Email:</strong> <span>info@example.com</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#">Data Analysis</a></li>
+            <li><a href="#">AI Training</a></li>
+            <li><a href="#">UI/UX Design</a></li>
+            <li><a href="#">Project Management</a></li>
+            <li><a href="#">IT Solutions</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-12 footer-newsletter">
+          <h4>Our Newsletter</h4>
+          <p>Subscribe to our newsletter and receive the latest news about our courses and services!</p>
+          <form action="forms/newsletter.php" method="post" class="php-email-form">
+            <div class="newsletter-form"><input type="email" name="email" placeholder="Your Email"><input type="submit" value="Subscribe"></div>
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">WYMNET</strong> <span>All Rights Reserved</span></p>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    // Category filtering
+    const categoryTabs = document.querySelectorAll('.category-tab');
+    const courseItems = document.querySelectorAll('.course-item');
+
+    categoryTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        const category = tab.getAttribute('data-category');
+        
+        // Update active tab
+        categoryTabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        
+        // Filter courses
+        courseItems.forEach(item => {
+          if (category === 'all' || item.getAttribute('data-category') === category) {
+            item.style.display = 'block';
+            setTimeout(() => {
+              item.style.opacity = '1';
+              item.style.transform = 'translateY(0)';
+            }, 10);
+          } else {
+            item.style.opacity = '0';
+            item.style.transform = 'translateY(20px)';
+            setTimeout(() => {
+              item.style.display = 'none';
+            }, 300);
+          }
+        });
+      });
+    });
+
+    // Smooth scroll for enroll buttons
+    document.querySelectorAll('.enroll-btn, .cta-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        window.location.href = 'contact-us.html';
+      });
+    });
+
+    // Initialize AOS
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true,
+      mirror: false
+    });
+
+    // Add transition styles to course items
+    courseItems.forEach(item => {
+      item.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+    });
+  </script>
+
+</body>
+
+</html>

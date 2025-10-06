@@ -1,0 +1,309 @@
+.courses-hero {
+    background: linear-gradient(135deg, #724e2c 0%, #523823 100%);
+    padding: 120px 0 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+.courses-hero::before {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(212, 165, 116, 0.1) 0%, transparent 70%);
+    border-radius: 50%;
+    top: -200px;
+    right: -100px;
+    animation: float 8s ease-in-out infinite;
+}
+
+.courses-hero h1 {
+    color: white;
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.courses-hero p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: clamp(1.1rem, 2vw, 1.3rem);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.category-tabs {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px 0 40px;
+}
+
+.category-tab {
+    background: white;
+    border: 2px solid #e0e0e0;
+    padding: 12px 32px;
+    border-radius: 50px;
+    font-weight: 600;
+    color: #666;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.category-tab:hover {
+    border-color: #724e2c;
+    color: #724e2c;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(114, 78, 44, 0.15);
+}
+
+.category-tab.active {
+    background: linear-gradient(135deg, #724e2c 0%, #523823 100%);
+    border-color: #724e2c;
+    color: white;
+    box-shadow: 0 4px 20px rgba(114, 78, 44, 0.3);
+}
+
+.course-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #f0f0f0;
+}
+
+.course-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 50px rgba(114, 78, 44, 0.2);
+    border-color: #724e2c;
+}
+
+.course-icon {
+    background: linear-gradient(135deg, #724e2c 0%, #9b6c25 100%);
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.course-icon::before {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+    border-radius: 50%;
+    top: -50px;
+    right: -50px;
+}
+
+.course-icon i {
+    font-size: 3.5rem;
+    color: white;
+    position: relative;
+    z-index: 1;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+}
+
+.course-body {
+    padding: 30px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.course-category {
+    display: inline-block;
+    background: rgba(114, 78, 44, 0.1);
+    color: #724e2c;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.course-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #2d2d2d;
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+
+.course-description {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.course-features {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.course-features li {
+    padding: 8px 0;
+    color: #555;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+}
+
+.course-features li i {
+    color: #724e2c;
+    margin-right: 10px;
+    font-size: 1.1rem;
+}
+
+.course-footer {
+    padding: 20px 30px;
+    border-top: 1px solid #f0f0f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.course-duration {
+    display: flex;
+    align-items: center;
+    color: #666;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.course-duration i {
+    margin-right: 8px;
+    color: #724e2c;
+}
+
+.enroll-btn {
+    background: linear-gradient(135deg, #724e2c 0%, #523823 100%);
+    color: white;
+    padding: 12px 28px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(114, 78, 44, 0.3);
+}
+
+.enroll-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(114, 78, 44, 0.4);
+    background: linear-gradient(135deg, #523823 0%, #724e2c 100%);
+}
+
+.cta-section {
+    background: linear-gradient(135deg, #724e2c 0%, #523823 100%);
+    padding: 80px 0;
+    margin-top: 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-section::before {
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(212, 165, 116, 0.1) 0%, transparent 70%);
+    border-radius: 50%;
+    bottom: -150px;
+    left: -100px;
+}
+
+.cta-section h2 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.cta-section p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-btn {
+    background: white;
+    color: #724e2c;
+    padding: 16px 48px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+.cta-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+    background: #f5f5f5;
+}
+
+.stats-section {
+    padding: 60px 0;
+    background: #fff8f0;
+}
+
+.stat-item {
+    text-align: center;
+    padding: 30px;
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #724e2c;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.stat-label {
+    color: #666;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .courses-hero {
+    padding: 100px 0 60px;
+    }
+
+    .category-tabs {
+    margin: 30px 0 25px;
+    }
+
+    .category-tab {
+    padding: 10px 24px;
+    font-size: 0.9rem;
+    }
+
+    .course-title {
+    font-size: 1.3rem;
+    }
+
+    .stat-number {
+    font-size: 2.5rem;
+    }
+}
