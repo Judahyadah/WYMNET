@@ -204,6 +204,7 @@
 }
 
 .enroll-btn:hover {
+    color: #fc932aad;
     transform: translateY(-2px);
     box-shadow: 0 6px 25px rgba(114, 78, 44, 0.4);
     background: linear-gradient(135deg, #523823 0%, #724e2c 100%);
