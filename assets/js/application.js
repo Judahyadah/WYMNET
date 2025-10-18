@@ -3,7 +3,7 @@ var buttons = document.querySelectorAll('a.enroll-btn');
 
 for(i = 0; i < buttons.length; i++) {
   var courseName = courses[i].textContent.trim();
-  var message = encodeURIComponent("I want to register for " + courseName);
+  var message = encodeURIComponent("My name is {} and i want to register for " + courseName + " course on WYMNET.");
   buttons[i].setAttribute("href", "https://wa.me/14373441072?text=" + message);
   buttons[i].setAttribute("target", "_blank");
 }
